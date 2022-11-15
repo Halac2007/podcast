@@ -333,9 +333,10 @@
 
 .main-content .main-list .list-item {
   padding: 10px 0px;
-
+  cursor: context-menu;
   border-bottom: 1px solid #6c757d2f;
 }
+
 /*------more-----------*/
 .wrap-detail-more {
   padding-top: 20px;
