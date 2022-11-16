@@ -1,5 +1,5 @@
 .wrap-podcast-detail .page-detail {
-  background: url('https://thuonggiaonline.vn/tgo-media/2022/2/13/cng-hi-phong-nh-thuy-hong-1611226138509352768211.jpg');
+  background-image: url('https://thuonggiaonline.vn/tgo-media/2022/2/13/cng-hi-phong-nh-thuy-hong-1611226138509352768211.jpg');
   /* background-image: linear-gradient(180deg, rgba(153, 0, 0, 0) -2.55%, #990000 83.5%), url(../img/item2.jpg); */
   height: 40.5625rem;
   background-size: cover;
@@ -7,6 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .wrap-box-podcast {
@@ -187,6 +189,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px;
+  flex-wrap: wrap;
 }
 .wrap-detail-content .wrap-box-podcast .author {
   padding: 20px 0;
@@ -201,7 +204,7 @@
 }
 .wrap-detail-content .wrap-audio .pcast-player .pcast-player-controls {
   color: #696969;
-  padding-bottom: 15%;
+
   padding-top: 5%;
 }
 
@@ -324,11 +327,14 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
+  padding: 20px 0px;
 }
 
 .main-content .main-list {
-  padding: 30px 0px;
+  background: #9393931f;
+  border-radius: 10px;
+
+  padding: 30px;
 }
 
 .main-content .main-list .list-item {
@@ -337,6 +343,9 @@
   border-bottom: 1px solid #6c757d2f;
 }
 
+.main-content .main-list .list-item strong {
+  color: #990000;
+}
 /*------more-----------*/
 .wrap-detail-more {
   padding-top: 20px;
@@ -364,4 +373,80 @@
 
 .wrap-detail-more .detail-more-list .item-news .item-news-thumb img {
   width: 100%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container {
+    width: calc(100% - 100px);
+  }
+  .article-items-icon {
+    padding: 20px 0px;
+  }
+  .model-podcast-detail .podcast-content {
+    width: 90%;
+  }
+  .wrap-detail-content .wrap-box-podcast .contact {
+    justify-content: center;
+    padding: 50px 10px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .wrap-podcast-detail .page-detail {
+    height: 30.5625rem;
+  }
+  .wrap-detail-content .wrap-box-podcast .contact {
+    justify-content: center;
+    padding: 10px 0px;
+  }
+  .main-content {
+    width: calc(100% - 50px);
+  }
+  .wrap-detail-more .detail-more-list .item-news {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border-bottom: 1px solid #69696950;
+  }
+  .wrap-detail-more .detail-more-list .item-news .item-news-thumb {
+    width: 40%;
+  }
+  .wrap-detail-more .detail-more-list .item-news .item-news-title {
+    width: 60%;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+  .text-headset {
+    padding: 0px 20px;
+  }
+  .model-podcast-detail .podcast-content {
+    margin: 0px;
+  }
+  .model-podcast-detail .podcast-content {
+    margin: 10px;
+  }
+  .model-podcast-detail .podcast-content {
+    width: 90%;
+  }
+  .wrap-detail-content .wrap-audio .pcast-player .pcast-player-controls {
+    padding-bottom: 50%;
+  }
+  .wrap-detail-content .pcast-player button .fa-play {
+    font-size: 30px;
+  }
+  .wrap-detail-content .pcast-player button .fa-pause {
+    font-size: 30px;
+  }
+  .icon-play-podcast {
+    padding: 20px 0px;
+  }
+  .social {
+    margin: 0px;
+  }
+  .wrap-iframe {
+    margin-left: 10px;
+  }
+  .wrap-detail-content .wrap-describe {
+    display: row;
+  }
 }

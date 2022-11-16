@@ -105,6 +105,7 @@
         currentSpeedIdx = currentSpeedIdx + 1 < speeds.length ? currentSpeedIdx + 1 : 0
         audio.playbackRate = speeds[currentSpeedIdx]
         this.textContent = speeds[currentSpeedIdx] + 'x'
+        // speeds[currentSpeedIdx].style.fontSize = '1rem'
         return true
       },
       false
