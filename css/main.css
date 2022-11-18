@@ -549,7 +549,7 @@ nav {
   height: 500vh;
   box-shadow: 0 0 10px #85888c;
   margin: -65px 0 0 -5px;
-  padding: 50px;
+  padding: 50px 20px;
 
   background-color: #f5f6fa;
   -webkit-font-smoothing: antialiased;
@@ -648,7 +648,7 @@ nav {
   border-bottom: 1px solid #e2dfdf;
 }
 .contact {
-  width: 60%;
+  width: 55%;
 }
 .contact .wrap-text {
   text-align: center;
