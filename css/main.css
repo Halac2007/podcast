@@ -474,8 +474,210 @@ ul {
   display: block;
 }
 
+/*-------menumobile---------*/
+#sidebar-mobie {
+  display: none;
+}
+nav {
+  background-color: #990000;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menuToggle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menuToggle span {
+  display: flex;
+  width: 29px;
+  height: 2px;
+  left: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #fff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383f;
+  margin-left: 20px;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: fixed;
+  width: 100vh;
+  height: 500vh;
+  box-shadow: 0 0 10px #85888c;
+  margin: -65px 0 0 -5px;
+  padding: 50px;
+
+  background-color: #f5f6fa;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  transition-delay: 2s;
+  border-bottom: 1px solid #e2dfdf;
+}
+
+#menuToggle input:checked ~ div {
+  transform: none;
+}
+.logo-mobile {
+  display: flex;
+  align-items: center;
+}
+.logo-mobile span {
+  color: #fff;
+  margin-left: 5px;
+  font-weight: 900;
+}
+.logo-mobile .logo {
+  width: 112px;
+  height: 35px;
+  display: block;
+  background: url(../img/logo.png) center center/112px no-repeat;
+}
+.logo-mobile-nav {
+  border-bottom: 1px solid #e2dfdf;
+  padding: 2px 5px 10px 110px;
+  margin-bottom: 2px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.logo-mobile-nav .logo {
+  width: 112px;
+  height: 35px;
+  display: block;
+  background: url(../img/logo.png) center center/112px no-repeat;
+}
+.icon-user {
+  margin-right: 20px;
+  color: #fff;
+}
+
+.box-search {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.search-input {
+  width: 55% !important;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  padding-left: 22px;
+  background: #c2c2c2;
+  opacity: 1 !important;
+}
+
+.search-btn {
+  color: rgb(142, 142, 142);
+  margin-top: 6px;
+  padding-left: 5px;
+  position: absolute;
+  z-index: 2;
+  border: 0;
+  background: transparent;
+}
+
+.box-login {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2dfdf;
+  border-top: 1px solid #e2dfdf;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.box-login .icon-user {
+  color: #888;
+}
+.box-login p {
+  padding-top: 5px;
+}
+.title-cate-mobile {
+  padding: 10px 0px;
+  border-bottom: 1px solid #e2dfdf;
+}
+.contact {
+  width: 60%;
+}
+.contact .wrap-text {
+  text-align: center;
+  padding-top: 20px;
+}
+/* .sidebar-mobie {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+} */
+
+#sidebar {
+  background: #ebebeb;
+  /* width: 300px; */
+  padding: 10px;
+  align-items: center;
+  height: 110vh;
+  min-height: 1000px;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  header {
+  #sidebar-mobie {
+    display: block;
+  }
+  .navigation-wrap {
     display: none;
   }
   .mainPodcast {
@@ -498,7 +700,10 @@ ul {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  header {
+  #sidebar-mobie {
+    display: block;
+  }
+  .navigation-wrap {
     display: none;
   }
   .podcast-container {

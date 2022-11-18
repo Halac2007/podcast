@@ -92,6 +92,7 @@
   -moz-appearance: none;
   appearance: none;
 }
+
 .pcast-player progress[value]::-webkit-progress-bar {
   background-color: rgb(195, 194, 194);
   border-radius: 0;
