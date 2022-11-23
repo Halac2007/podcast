@@ -27,9 +27,15 @@ a {
 header {
   background-color: #990000;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+.sticky-top {
+  position: sticky;
 }
 .navigation {
-  position: fixed;
   display: flex;
   align-items: center;
   padding: 5px 30px;
@@ -58,8 +64,8 @@ header {
   text-transform: uppercase;
 }
 
-.navigation .menu .main {
-  position: relative;
+.navigation .menu .main .active {
+  background: #121212;
 }
 .navigation .menu .sub {
   position: absolute;
@@ -389,6 +395,7 @@ header {
 .podcast-container .podcast-container-box .item-news .item-news-title {
   font-size: 1.2rem;
   line-height: 1.5;
+  padding-top: 10px;
 }
 
 /*-----------------footer-----------------*/
@@ -478,22 +485,16 @@ ul {
 }
 
 /*-------menumobile---------*/
-.sidebar-mobie {
+#sidebar-mobie {
   display: none;
 }
-.sidebar-mobie {
-  position: relative;
-}
+
 nav {
   background-color: #990000;
   height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  top: 0;
 }
 
 #menuToggle {
@@ -618,7 +619,7 @@ nav {
 }
 
 .search-input {
-  width: 55% !important;
+  width: 90% !important;
   height: 40px;
   border-radius: 5px;
   border: none;
@@ -682,7 +683,7 @@ nav {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .sidebar-mobie {
+  #sidebar-mobie {
     display: block;
   }
 
@@ -719,7 +720,7 @@ nav {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .sidebar-mobie {
+  #sidebar-mobie {
     display: block;
   }
 
@@ -815,7 +816,7 @@ nav {
     display: none;
   }
 
-  .sidebar-mobie {
+  #sidebar-mobie {
     display: block;
   }
   .podcast-cate-content-mobile {

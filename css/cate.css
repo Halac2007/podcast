@@ -25,6 +25,7 @@
   justify-content: center;
   padding: 20px;
 }
+
 .page-podcast-cate .podcast-cate-content .article_thumb {
   width: 30%;
 }
@@ -112,6 +113,7 @@
   background: #990000;
   color: #fff;
   padding: 10px;
+  font-size: 1.2rem;
   border: none;
   border-radius: 10px;
   font-weight: 700;
@@ -232,20 +234,60 @@
 }
 
 .main-content .main-list {
-  background: #9393931f;
   border-radius: 10px;
 
   padding: 30px;
 }
-
-.main-content .main-list .list-item {
+.main-content h3 {
+  display: flex;
+  align-items: center;
   padding: 10px 0px;
+  color: #990000;
+  font-size: 1.2rem;
+}
+.main-content h3 i {
+  margin-right: 20px;
+}
+.gg-list {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 3px;
+}
+.gg-list::after,
+.gg-list::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: currentColor;
+  top: 3px;
+  left: 3px;
+  box-shadow: 0 4px 0, 0 8px 0;
+}
+.gg-list::after {
+  border-radius: 3px;
+  width: 8px;
+  left: 7px;
+}
+.main-content .main-list .list-item {
+  padding: 10px 20px;
   cursor: context-menu;
-  border-bottom: 1px solid #6c757d2f;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background: #88888814;
+  margin-bottom: 5px;
 }
 
 .main-content .main-list .list-item strong {
   color: #990000;
+  margin-right: 10px;
 }
 
 .podcast-cate-comment {
@@ -541,11 +583,11 @@ textarea {
 .wrap-detail-more .detail-more-list .item-news .item-news-thumb img {
   width: 100%;
 }
-
 .wrap-detail-more .detail-more-list .item-news .item-news-title {
-  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-top: 10px;
 }
-
 .model-podcast-detail .podcast-content {
   width: 100%;
   max-width: 1000px;
@@ -680,22 +722,17 @@ textarea {
 }
 
 .main-content .main-list {
-  background: #9393931f;
   border-radius: 10px;
 
   padding: 30px;
 }
 
-.main-content .main-list .list-item {
-  padding: 10px 0px;
-  cursor: context-menu;
-  border-bottom: 1px solid #6c757d2f;
-}
-
 .main-content .main-list .list-item strong {
   color: #990000;
 }
-
+.main-content .main-title p {
+  color: #888;
+}
 .podcast-cate-content-mobile {
   position: absolute;
 }
@@ -987,7 +1024,7 @@ img {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .sidebar-mobie {
+  #sidebar-mobie {
     display: none;
   }
   .model-podcast {
@@ -1045,7 +1082,7 @@ img {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 768px) {
-  .sidebar-mobie {
+  #sidebar-mobie {
     display: block;
   }
   .model-podcast {
@@ -1114,13 +1151,14 @@ img {
     border-bottom: 1px solid #ddd;
   }
   .wrap-detail-more .detail-more-list .item-news .item-news-thumb {
-    width: 60%;
+    width: 100%;
   }
   .wrap-detail-more .detail-more-list .item-news .item-news-thumb img {
     width: 100%;
   }
   .wrap-detail-more .detail-more-list .item-news .item-news-title {
     margin-left: 20px;
+    font-size: 1.1rem;
   }
   .pcast-next svg,
   .pcast-rewind svg {
@@ -1152,5 +1190,11 @@ img {
   }
   .podcast-cate-comment {
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .audio.green-audio-player {
+    width: 100%;
   }
 }
