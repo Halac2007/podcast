@@ -1,6 +1,6 @@
 const playBtn = document.getElementById('playBtn')
 const stopBtn = document.getElementById('stopBtn')
-const volumeBtn = document.getElementById('volumeBtn')
+const volume = document.getElementById('volumeBtn')
 
 const wavesurfer = WaveSurfer.create({
   container: '#waveform',
@@ -28,12 +28,12 @@ stopBtn.onclick = function () {
   playBtn.src = 'img/play.png'
 }
 
-volumeBtn.onclick = function () {
+volume.onclick = function () {
   wavesurfer.toggleMute()
-  if (volumeBtn.src.includes('volume.png')) {
-    volumeBtn.src = 'img/mute.png'
+  if (volume.src.includes('volume.png')) {
+    volume.src = 'img/mute.png'
   } else {
-    volumeBtn.src = 'img/volume.png'
+    volume.src = 'img/volume.png'
   }
 }
 
