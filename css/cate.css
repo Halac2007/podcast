@@ -771,9 +771,9 @@ textarea {
   position: absolute;
   top: 0;
   left: 20px;
-  width: calc(100% - 90px);
+  width: calc(100% - 30px);
   transform: translateY(-98%);
-  padding: 10px 10px 10px 120px;
+  padding: 10px 10px 10px 150px;
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
   z-index: 0;
 }
@@ -790,7 +790,7 @@ textarea {
 }
 .img-container {
   position: relative;
-  width: 100px;
+  width: 110px;
 }
 
 .img-container::after {
@@ -808,7 +808,7 @@ textarea {
 .img-container img {
   border-radius: 50%;
   object-fit: cover;
-  height: 100px;
+  height: 110px;
   width: inherit;
   position: absolute;
   bottom: 0;
