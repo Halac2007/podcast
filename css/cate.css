@@ -621,7 +621,7 @@ textarea {
 
 .model-podcast-detail .podcast-content h1 {
   text-align: center;
-  padding: 20px;
+  padding: 20px 0px;
   font-size: 2rem;
   line-height: 1.5;
 }
