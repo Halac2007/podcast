@@ -213,7 +213,7 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--box-shadow);
-  transform: translateY(-42px);
+  transform: translateY(-43px);
 }
 .article-caption {
   display: flex;
