@@ -824,11 +824,11 @@ textarea {
 }
 
 .audio-info .title {
-  color: rgb(86, 101, 116);
+  color: rgb(23, 26, 30);
   font-size: 1.2rem;
 }
 .audio-info .author {
-  color: rgb(86, 101, 116);
+  color: rgb(23, 26, 30);
   font-size: 0.8rem;
   padding-bottom: 20px;
   padding-top: 5px;
@@ -1187,6 +1187,7 @@ img {
   }
   .page-podcast-cate .podcast-cate-content .content-text .article__sapo {
     text-align: justify;
+    padding: 0px 10px;
   }
   .page-podcast-cate .podcast-cate-content .article_thumb {
     display: none;
