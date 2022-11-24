@@ -1,6 +1,6 @@
 .page-podcast-cate .img-inner img {
   width: 100%;
-  height: 600px;
+  max-height: calc(100vh - 200px);
 }
 
 .page-podcast-cate .podcast-cate-content {
@@ -562,12 +562,17 @@ textarea {
 }
 
 .wrap-detail-more .detail-more-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
   border-top: 1px solid #6c757d;
   padding: 10px;
   color: #990000;
+  display: flex;
+  align-items: center;
+}
+.wrap-detail-more .detail-more-title i {
+  margin-right: 10px;
 }
 .wrap-detail-more .detail-more-list {
   display: flex;
@@ -801,10 +806,12 @@ textarea {
 }
 
 .audio-info {
-  background: #f8ffae;
+  /* background: #f8ffae;
   background: -webkit-linear-gradient(-65deg, #43c6ac, #f8ffae);
-  background: linear-gradient(-65deg, #43c6ac, #f8ffae);
+  background: linear-gradient(-65deg, #43c6ac, #f8ffae); */
   /* background-color: rgba(255, 255, 255, 0.5); */
+  background: rgba(255, 255, 255, 0.397);
+  backdrop-filter: blur(10px);
   border-radius: 15px 15px 0 0;
   position: absolute;
   top: 0;
@@ -921,7 +928,7 @@ textarea {
   position: relative;
 }
 .audio.green-audio-player .slider .progress {
-  background-color: #44bfa3;
+  background-color: #990000;
   border-radius: inherit;
   position: absolute;
   pointer-events: none;
@@ -930,7 +937,7 @@ textarea {
   height: 16px;
   width: 16px;
   border-radius: 8px;
-  background-color: #44bfa3;
+  background-color: #990000;
   position: absolute;
   pointer-events: all;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
@@ -1149,6 +1156,7 @@ img {
   .wrap-detail-more .detail-more-list .item-news {
     width: 100%;
     display: flex;
+    align-items: center;
     border-bottom: 1px solid #ddd;
   }
   .wrap-detail-more .detail-more-list .item-news .item-news-thumb {
