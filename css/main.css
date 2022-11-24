@@ -951,7 +951,7 @@ nav {
     display: none;
   }
   .wrap-detail-more .item-news .caption {
-    transform: translateY(27px);
+    transform: translateY(26px);
   }
   .wrap-detail-more .caption p {
     font-size: 0.8rem;
