@@ -165,6 +165,7 @@ header {
   width: 70%;
   padding-right: 20px;
   border-right: 1px solid #dfdfdf;
+  position: relative;
 }
 
 .mainPodcast .mainPodcast-thumb {
@@ -174,6 +175,64 @@ header {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.caption {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  text-shadow: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--box-shadow);
+  transform: translateY(-42px);
+}
+.caption p {
+  margin-left: 20px;
+}
+.gg-mic {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 12px;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+  border: 2px solid;
+  border-top: 0;
+  margin-top: 3px;
+}
+.gg-mic::after,
+.gg-mic::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+.gg-mic::after {
+  border: 2px solid;
+  width: 8px;
+  height: 18px;
+  left: 2px;
+  top: -10px;
+  border-radius: 4px;
+}
+.gg-mic::before {
+  width: 10px;
+  height: 4px;
+  top: 12px;
+  left: 1px;
+  border-right: 4px solid transparent;
+  box-shadow: 0 2px 0, inset -2px 0 0;
 }
 .mainPodcast .mainPodcast-text {
   padding-top: 20px;
@@ -350,9 +409,10 @@ header {
 }
 .latestPodcast .item-news .item-news-title {
   font-size: 1.2rem;
-
+  font-weight: 700;
   line-height: 1.5;
   padding-left: 20px;
+  margin-top: 10px;
 }
 
 /*--------cate---------------*/
@@ -365,6 +425,7 @@ header {
   font-weight: 700;
   border-top: 1px solid #121212;
   padding-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -400,7 +461,7 @@ header {
 
 /*-----------------footer-----------------*/
 .site-footer {
-  margin-top: 40px;
+  padding-top: 40px;
   border-top: 1px solid #dfdfdf;
 }
 
@@ -559,8 +620,8 @@ nav {
   width: 100%;
   height: 500vh;
   box-shadow: 0 0 10px #85888c;
-  margin: -65px 0 0 -5px;
-  padding: 50px 20px;
+  top: 0;
+  padding: 0px 30px;
 
   background-color: #f5f6fa;
   -webkit-font-smoothing: antialiased;
@@ -751,6 +812,53 @@ nav {
     width: 100%;
   }
 
+  .caption p {
+    margin-left: 10px;
+  }
+  .latestPodcast .caption {
+    transform: translateY(62px);
+  }
+
+  .caption .gg-mic {
+    width: 12px;
+    height: 12px;
+  }
+  .caption .gg-mic::after {
+    border: 2px solid;
+    width: 6px;
+    height: 13px;
+    left: 1px;
+    top: -6px;
+    border-radius: 4px;
+  }
+  .caption .gg-mic::before {
+    width: 10px;
+    height: 5px;
+    top: 11px;
+    left: -1px;
+    border-right: 4px solid transparent;
+    box-shadow: 0 2px 0, inset -2px 0 0;
+  }
+  .latestPodcast .caption {
+    font-size: 0.8rem;
+  }
+
+  .podcast-container .podcast-container-box .item-news:nth-child(1) .caption {
+    transform: translateY(-38px);
+  }
+
+  .podcast-container .podcast-container-box .item-news .caption {
+    transform: translateY(30px);
+  }
+  .wrap-detail-more .item-news .caption {
+    transform: translateY(54px);
+  }
+  .wrap-detail-more .caption p {
+    font-size: 0.8rem;
+  }
+  .podcast-container .caption p {
+    font-size: 0.8rem;
+  }
   .podcast-container .podcast-container-box .item-news .item-news-thumb:nth-child(1) {
     width: 100%;
   }
