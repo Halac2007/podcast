@@ -63,9 +63,8 @@ header {
   white-space: nowrap;
   text-transform: uppercase;
 }
-
-.navigation .menu .main .active {
-  background: #121212;
+.navigation .menu .main .home.active {
+  color: #121212;
 }
 .navigation .menu .sub {
   position: absolute;
@@ -110,6 +109,30 @@ header {
   padding-right: 20px;
   color: #fff;
   padding-left: 2px;
+}
+
+.navigation .search-social {
+  display: flex;
+  align-items: center;
+}
+.navigation .box-search {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.btn_search {
+  position: absolute;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  display: block;
+  padding: 5px;
+  border-radius: 50%;
+  background: url(../img/search.png) center center no-repeat;
 }
 
 .gg-user {
@@ -178,14 +201,11 @@ header {
 }
 
 .caption {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   position: absolute;
   color: white;
   font-weight: 700;
   padding: 10px 10px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(210, 0, 0, 0.516);
   backdrop-filter: blur(10px);
   text-shadow: rgba(255, 255, 255, 0.1);
   border-top-left-radius: 10px;
@@ -195,8 +215,13 @@ header {
   box-shadow: var(--box-shadow);
   transform: translateY(-42px);
 }
+.article-caption {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .caption p {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .gg-mic {
   box-sizing: border-box;
@@ -221,9 +246,9 @@ header {
 .gg-mic::after {
   border: 2px solid;
   width: 8px;
-  height: 18px;
+  height: 15px;
   left: 2px;
-  top: -10px;
+  top: -6px;
   border-radius: 4px;
 }
 .gg-mic::before {
@@ -730,7 +755,7 @@ nav {
   border-radius: 5px;
   border: none;
   outline: 0;
-  padding-left: 22px;
+  padding-left: 34px;
   background: #c2c2c2;
   opacity: 1 !important;
 }
@@ -890,10 +915,11 @@ nav {
 
   .podcast-container .podcast-container-box .item-news:nth-child(1) .caption {
     transform: translateY(-38px);
+    display: block;
   }
 
   .podcast-container .podcast-container-box .item-news .caption {
-    transform: translateY(30px);
+    display: none;
   }
   .wrap-detail-more .item-news .caption {
     transform: translateY(27px);
