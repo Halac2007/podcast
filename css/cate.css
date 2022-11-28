@@ -571,6 +571,7 @@ textarea {
 .close:hover {
   background: #990000;
 }
+
 .box-audio-content {
   display: flex;
   justify-content: space-between;
