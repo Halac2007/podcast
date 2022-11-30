@@ -51,21 +51,23 @@ header {
 }
 .navigation .menu .main > a {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.9rem;
+  line-height: 1.5;
   height: 40px;
   padding: 0 10px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  color: #fff;
+
   display: flex;
   align-items: center;
   white-space: nowrap;
   text-transform: uppercase;
 }
-.navigation .menu .main .home.active {
-  color: #121212;
+.navigation .menu .main > a:hover {
+  color: #990000;
 }
+.navigation .menu .main .home.active {
+  color: #990000;
+}
+
 .navigation .menu .sub {
   position: absolute;
   left: -999em;
@@ -107,7 +109,7 @@ header {
   font-size: 1.3rem;
   line-height: 1.5;
   padding-right: 20px;
-  color: #fff;
+  color: #990000;
   padding-left: 2px;
 }
 
@@ -251,7 +253,7 @@ header {
 }
 
 .text-headset strong {
-  padding: 0px 20px;
+  color: #888;
 }
 
 .mainPodcast-text .article-items-icon .timer {
@@ -292,8 +294,8 @@ header {
   object-fit: cover;
 }
 .latestPodcast .item-news .item-news-title {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+
   line-height: 1.5;
   padding-left: 20px;
   margin-top: 10px;
@@ -341,7 +343,7 @@ header {
 }
 
 .podcast-container .podcast-container-box .item-news {
-  width: 23%;
+  width: 23.444%;
   padding-top: 25px;
   padding-right: 20px;
   margin-right: 20px;
@@ -353,7 +355,7 @@ header {
 }
 
 .podcast-container .podcast-container-box .item-news .item-news-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   padding-top: 10px;
 }
@@ -455,7 +457,7 @@ ul {
 }
 
 nav {
-  background-color: #990000;
+  background-color: #f7f7f7;
   height: 65px;
   display: flex;
   justify-content: space-between;
