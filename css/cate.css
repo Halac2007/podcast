@@ -517,7 +517,7 @@ textarea {
   transition: 0.4s;
 }
 
-.slider:before {
+.wrap-auto-play .slider:before {
   position: absolute;
   content: '';
   height: 20px;
@@ -1226,7 +1226,7 @@ img {
     font-size: 1.2rem;
   }
   .podcast-cate-comment {
-    margin-top: 0;
+    margin-top: 10%;
   }
   .wrap-auto-play .box-wrap-auto .box-qc {
     display: none;
