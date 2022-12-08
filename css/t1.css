@@ -669,12 +669,14 @@ textarea {
   font-size: 2rem;
   font-weight: 700;
   float: right;
-  padding: 2px 11px;
-  margin: -20px -22px;
+  padding: 8px 15px;
+
+  margin: -38px -38px;
+
   color: #fff;
   background: #696969ab;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 .close:hover {
@@ -973,6 +975,9 @@ textarea {
     width: 100%;
   }
   .pcast-download {
+    display: none;
+  }
+  .close {
     display: none;
   }
 }
