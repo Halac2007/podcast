@@ -625,6 +625,7 @@ input:checked + .slider:before {
   line-height: 1.5;
   padding-top: 10px;
 }
+
 .model-podcast-detail .podcast-content {
   width: 100%;
   max-width: 1200px;
