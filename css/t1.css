@@ -784,7 +784,10 @@ textarea {
 .page-interested .box-inter .item-news .item-news-title {
   line-height: 1.5;
   text-align: justify;
-  font-size: 18px;
+  font-size: 20px;
+  padding-top: 10px;
+  color: rgb(18, 18, 18);
+  font-weight: 600;
 }
 .page-interested .box-inter .item-news .item-news-thumb img {
   width: 100%;
@@ -979,5 +982,16 @@ textarea {
   }
   .close {
     display: none;
+  }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .end_author .article_top {
+    display: none;
+  }
+  .pcast-player button {
+    width: 100%;
+  }
+  .page-interested .inter-title h2 {
+    font-size: 1.5em;
   }
 }
