@@ -684,6 +684,13 @@ nav {
   .latestPodcast .item-news {
     padding: 20px 5px;
   }
+  .podcast-container .podcast-container-box .item-news:nth-child(1) {
+    width: 100%;
+    display: inline-block;
+  }
+  .podcast-container .podcast-container-box .item-news .item-news-title:nth-child(1) {
+    font-size: 22px !important;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

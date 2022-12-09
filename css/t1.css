@@ -81,6 +81,7 @@
 
 .box-text button span {
   margin: 0px 10px;
+  color: rgb(51, 51, 51);
 }
 .box-player {
   padding-top: 20px;
@@ -232,6 +233,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px 0px;
 }
 
@@ -279,7 +281,6 @@
   padding: 5px;
   line-height: 22px;
   -webkit-appreance: none;
-  min-width: 32px;
 }
 
 .pcast-player progress {
@@ -323,7 +324,6 @@
   background: #99000000;
   border-radius: 10px;
   color: black;
-  width: 30px;
 }
 
 .pcast-player button .fa-volume-up {
@@ -918,9 +918,6 @@ textarea {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .end_author .article_top {
-    display: none;
-  }
   .page-content {
     display: flex;
     flex-wrap: wrap;
@@ -983,11 +980,20 @@ textarea {
   .close {
     display: none;
   }
-}
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .end_author .article_top {
+  .end_author .box-social .social {
     display: none;
   }
+  .end_author {
+    justify-content: center;
+  }
+  .page-interested .inter-title h2 {
+    font-size: 1.3em;
+  }
+  .page-interested .box-inter .item-news .item-news-title {
+    font-size: 16px;
+  }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .pcast-player button {
     width: 100%;
   }
