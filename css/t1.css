@@ -955,7 +955,7 @@ textarea {
   .icon-play-podcast {
     order: -1;
 
-    width: 90%;
+    width: 100%;
   }
   .pcast-player-controls .timer {
     width: 90%;
