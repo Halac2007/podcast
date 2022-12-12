@@ -197,6 +197,7 @@
 .social {
   border-left: 1px solid #d7d7d7;
   display: flex;
+  padding-left: 2px;
 }
 .social .bookmark {
   font-size: 16px;
@@ -926,8 +927,13 @@ textarea {
 
     max-width: 120px;
   }
-  .podcast-container .podcast-container-box .item-news {
+  /* .podcast-container .podcast-container-box .item-news {
     width: 50%;
+  } */
+  .page-interested .box-inter .item-news {
+    width: 33%;
+    padding-left: 35px;
+    padding-bottom: 35px;
   }
 }
 
@@ -976,7 +982,9 @@ textarea {
   }
   .social {
     margin: 10px 10px;
+    border-left: none;
   }
+
   .box-share {
     font-size: 16px;
   }
