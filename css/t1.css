@@ -89,6 +89,7 @@
   background: transparent;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .box-text button span {
@@ -301,6 +302,7 @@
   padding: 5px;
   line-height: 22px;
   -webkit-appreance: none;
+  cursor: pointer;
 }
 
 .pcast-player progress {
@@ -309,6 +311,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  cursor: pointer;
 }
 
 .pcast-player progress[value]::-webkit-progress-bar {
@@ -692,7 +695,7 @@ textarea {
   padding: 8px 15px;
 
   margin: -38px -38px;
-
+  cursor: pointer;
   color: #fff;
   background: #696969ab;
   width: 50px;
