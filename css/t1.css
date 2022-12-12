@@ -192,12 +192,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .social {
-  margin-left: 20px;
-  padding-left: 20px;
   border-left: 1px solid #d7d7d7;
   display: flex;
+}
+.social .bookmark {
+  font-size: 16px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0px;
 }
 
 .social .twitter {
@@ -967,7 +974,9 @@ textarea {
   .pcast-player-controls .timer {
     width: 90%;
   }
-
+  .social {
+    margin: 10px 10px;
+  }
   .box-share {
     font-size: 16px;
   }
@@ -987,10 +996,7 @@ textarea {
   .close {
     display: none;
   }
-  .social {
-    margin-left: 0px;
-    padding-left: 0px;
-  }
+
   .end_author {
     justify-content: center;
   }
