@@ -137,7 +137,7 @@ header {
 
 /*---------oa-----------------*/
 .container {
-  width: calc(100% - 50px);
+  width: calc(100% - 200px);
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
@@ -719,10 +719,14 @@ nav {
   .latestPodcast .item-news {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  .latestPodcast .item-news .item-news-thumb {
+    margin-right: 14px;
   }
   .latestPodcast .item-news .item-news-thumb img {
-    height: 100px;
     width: 100%;
+    object-fit: cover;
   }
 
   .caption p {
