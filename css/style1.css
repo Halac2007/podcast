@@ -138,10 +138,13 @@
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .page-category {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
   }
   .page-category .thumb {
-    margin-right: 0px !important;
+    order: -1;
   }
   .page-category .des .header-title h1 {
     font-size: 30px;
