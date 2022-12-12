@@ -41,6 +41,11 @@
   font-size: 0.8125rem;
   line-height: 1rem;
 }
+.page-content .box-info .cate {
+  padding: 20px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .page-content .box-info .title {
   font-weight: 200;
   margin-bottom: 19px;
