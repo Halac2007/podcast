@@ -145,6 +145,7 @@
   }
   .page-category .thumb {
     order: -1;
+    margin-right: 0px;
   }
   .page-category .des .header-title h1 {
     font-size: 30px;
@@ -181,5 +182,8 @@
   }
   .box-cate-list .list-item .item-news .item-news-title {
     margin: 0px 0px;
+  }
+  .box-pagination {
+    text-align: center;
   }
 }
