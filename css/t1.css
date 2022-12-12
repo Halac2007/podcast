@@ -191,7 +191,7 @@
 .box-social {
   display: flex;
   justify-content: center;
-  padding: 10px 0px;
+  align-items: center;
 }
 .social {
   margin-left: 20px;
@@ -987,8 +987,9 @@ textarea {
   .close {
     display: none;
   }
-  .end_author .box-social .social {
-    display: none;
+  .social {
+    margin-left: 0px;
+    padding-left: 0px;
   }
   .end_author {
     justify-content: center;

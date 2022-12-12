@@ -311,6 +311,7 @@ header {
   justify-content: space-between;
   color: #990000;
   font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .header-title i {
@@ -346,7 +347,7 @@ header {
 }
 
 .podcast-container .podcast-container-box .item-news {
-  width: 18%;
+  width: 23%;
   padding-top: 25px;
 }
 
@@ -768,6 +769,9 @@ nav {
   }
   .latestPodcast .caption {
     transform: translateY(64px);
+  }
+  .header-title {
+    font-size: 1.3rem;
   }
 
   .caption .gg-mic {
