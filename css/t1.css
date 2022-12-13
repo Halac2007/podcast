@@ -122,11 +122,9 @@
 }
 .splide__slide .splide-text {
   width: 60%;
-  height: auto;
 }
 .splide__slide .splide-thumb {
   width: 40%;
-  height: auto;
   padding-right: 20px;
 }
 .splide__slide .splide-thumb img {
@@ -1053,6 +1051,9 @@ textarea {
   }
   .auto-play {
     padding-bottom: 0px;
+  }
+  .splide__slide .splide-thumb {
+    height: 30px;
   }
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
