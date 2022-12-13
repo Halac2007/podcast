@@ -11,6 +11,7 @@
   background-color: rgb(244, 237, 229);
   background-image: linear-gradient(178deg, rgb(244 237 229 / 50%) -2.55%, rgb(244, 237, 229) 63.5%),
     url(https://photo-cms-plo.epicdn.me/Uploaded/2022/wpdhncwqr/2022_12_12/2-5553.jpg);
+  height: 100vh;
   padding-bottom: 20px;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -140,7 +141,7 @@
 .splide__slide .splide-text .title {
   color: #121212;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   display: block;
 }
