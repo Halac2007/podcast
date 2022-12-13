@@ -913,7 +913,7 @@ textarea {
   width: 80%;
   margin: auto;
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1600px) {
   .pcast-player .pcast-player-controls {
     height: 300px;
     padding: 88px 8px;
